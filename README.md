@@ -9,6 +9,8 @@ To run the app in development mode, you need to have [Node.js](https://nodejs.or
 - run `npm install`
 - run `npm start`
 
+After running this you'll have the WS server running on port 5000.
+
 To setup and run the front project, move to the `web` folder. If you want it without `yarn` take the following path:
 
 - run `npm install`
@@ -18,6 +20,8 @@ With `yarn` is pretty similar:
 
 - run `yarn install` or simply `yarn`
 - run `yarn start`
+
+Once you have run `yarn start` you can go to `http://localhost:8080/` and see the page running.
 
 ## Notes about performace
 
