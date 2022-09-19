@@ -23,8 +23,16 @@ With `yarn` is pretty similar:
 
 Once you have run `yarn start` you can go to `http://localhost:8080/` and see the page running.
 
-## Notes about performace
+## Reflection
+- ### What aspect of this	exercise did you find most interesting?
 
-A throttling approach was implemented to improve React's performance and try to avoid tons of re-renders in the page. This technique was applied in a custom hook wich is in charge of connect to the WS and update a state with all the senors on it. 
+> I think that the best part for me was trying to figure out how to improve perfomance and avoid React's many re-renders, since I'm not used to facing this kind of issues and work with web sockets.
 
-The good part of this is that it works, you can limit the number of times the state is updated per sensor with a throttle limit, this means that the state will be updated only each "throttle limit" times, hence this will cause fewer re-renders. Now the downside of this approach is that we may lose some important amount data if we have a large "throttle limit" and if the number of sensors grow more, throttling may not be enough, we will need another approach such as pagination or lazy loading the cards components for the sensors.
+- ### What did you find most cumbersome?
+
+> I'd say that boilerplate code, it's a common thing in Front End projects.
+- ### Notes about performace
+
+>A throttling approach was implemented to improve React's performance and try to avoid tons of re-renders in the page. This technique was applied in a custom hook wich is in charge of connect to the WS and update a state with all the senors on it. 
+
+>The good part of this is that it works, you can limit the number of times the state is updated per sensor with a throttle limit, this means that the state will be updated only each "throttle limit" times, hence this will cause fewer re-renders. Now the downside of this approach is that we may lose some important amount data if we have a large "throttle limit" and if the number of sensors grow more, throttling may not be enough, we will need another approach such as pagination or lazy loading the cards components for the sensors.
