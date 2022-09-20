@@ -25,15 +25,17 @@ export const SensorsInfo = () => {
         key={id}
         start={cols}
         span={4}>
-        <SensorCard connected={sensor.connected}>
+        <SensorCard connected={sensor.connected} data-testid="sensor_card">
           <SensorCardBody>
             <h2>{sensor.name}</h2>
             <p>{sensor.value ? `Value: ${sensor.value} ${sensor.unit}` : `Connect to view ${sensor.name.toLowerCase()} value`}</p>
           </SensorCardBody>
           <SensorCardFooter>
-            <Button theme={sensor.connected ? 'danger' : 'success'} onClick={() => {
-              updateSensor({ command: connected ? 'disconnect' : 'connect', id })
-            }}>{connected ? 'Disconnect' : 'Connect'}</Button>
+            <Button
+              theme={sensor.connected ? 'danger' : 'success'}
+              onClick={() => {
+                updateSensor({ command: connected ? 'disconnect' : 'connect', id })
+              }}>{connected ? 'Disconnect' : 'Connect'}</Button>
           </SensorCardFooter>
         </SensorCard>
       </GridItem>;
