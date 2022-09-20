@@ -23,6 +23,10 @@ With `yarn` is pretty similar:
 
 Once you have run `yarn start` you can go to `http://localhost:8080/` and see the page running.
 
+## FE. Unit testing
+
+Move to the web folder, and to run unit tests use the `yarn test` or if you want to watch them run `yarn test:watch`
+
 ## Reflection
 - ### What aspect of this	exercise did you find most interesting?
 
